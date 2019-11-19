@@ -1,5 +1,4 @@
 import { hot } from 'react-hot-loader/root';
-import styled from 'styled-components';
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';

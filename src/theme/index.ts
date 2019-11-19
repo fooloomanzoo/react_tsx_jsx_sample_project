@@ -1,29 +1,6 @@
-import 'styled-components';
-import { DefaultTheme } from 'styled-components';
+import { Theme } from './styled.d';
 
-// and extend them!
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    color: {
-      primary: string;
-      secondary: string;
-    };
-    background: {
-      primary: string;
-      secondary: string;
-      special: string;
-    };
-    spacing: {
-      micro: number;
-      tiny: number;
-      small: number;
-      medium: number;
-      large: number;
-    };
-  }
-}
-
-export const theme: DefaultTheme = {
+export const theme: Theme = {
   color: {
     primary: '#302f2b',
     secondary: 'rgba(0, 0, 0, 0.8)'

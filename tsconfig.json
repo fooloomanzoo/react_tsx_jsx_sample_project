@@ -9,7 +9,7 @@
 		"noImplicitThis": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"module": "esNext",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"target": "es2018",
 		"jsx": "react",

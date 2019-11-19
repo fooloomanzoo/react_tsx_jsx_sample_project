@@ -39,6 +39,7 @@ const Button: FunctionComponent<ButtonProps> = ({
   const hoverRef = useRef(null);
   const handleMouseOver = useMemo(() => () => setIsHovered(true), []);
   const handleMouseOut = useMemo(() => () => setIsHovered(false), []);
+
   useEffect(
     () => {
       const node = hoverRef.current;
@@ -52,6 +53,7 @@ const Button: FunctionComponent<ButtonProps> = ({
     },
     [hoverRef.current] // Recall only if ref changes
   );
+
   return (
     <StyledButton ref={hoverRef}>
       {isHovered ? <Bike size={iconSize} /> : <Motorcycle size={iconSize} />}
