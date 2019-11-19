@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "@babel/typescript",
+    [
+      "@babel/env",
+      {
+        "targets": "node 10"
+      }
+    ],
+    "@babel/react"
+  ],
+  "env": {
+    "esm": {
+      "presets": [
+        "@babel/typescript",
+        [
+          "@babel/env",
+          {
+            "modules": false
+          }
+        ],
+        "@babel/react"
+      ]
+    }
+  },
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+  ]
+}
