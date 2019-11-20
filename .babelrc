@@ -2,9 +2,10 @@
   "presets": [
     "@babel/typescript",
     [
-      "@babel/env",
+      "@babel/preset-env",
       {
-        "targets": "node 10"
+        "useBuiltIns": "usage",
+        "corejs": 3
       }
     ],
     "@babel/react"
@@ -24,7 +25,9 @@
     }
   },
   "plugins": [
+    "babel-plugin-styled-components",
     "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread"
+    "@babel/proposal-object-rest-spread",
+    "@babel/plugin-transform-regenerator"
   ]
 }

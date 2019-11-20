@@ -80,7 +80,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: path.resolve(DIST, 'index.html')
+      template: path.resolve(SOURCE, 'index.html')
     }),
     new webpack.HotModuleReplacementPlugin()
   ],

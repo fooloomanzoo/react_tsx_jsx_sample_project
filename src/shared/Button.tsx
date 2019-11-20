@@ -11,20 +11,20 @@ import Motorcycle from '../icons/motorcycle';
 import Bike from '../icons/bike';
 
 const StyledButton = styled.button`
-    display: inline-flex;
-    align-items: center
-    color: ${({ theme }) => theme.color.secondary};
-    background-color: transparent;
-    border: 2px solid ${({ theme }) => theme.color.secondary};
-    border-radius: ${({ theme }) => theme.spacing.micro}px;
-    margin-right: 0.25em;
-    padding: 0.25em 0.5em;
-    outline: none;
-    :hover {
-        color: ${({ theme }) => theme.color.primary};
-        background-color: ${({ theme }) => theme.background.primary};
-        border-color: ${({ theme }) => theme.background.special};
-    }
+  display: inline-flex;
+  align-items: center;
+  color: ${({ theme }) => theme.color.secondary};
+  background-color: transparent;
+  border: 2px solid ${({ theme }) => theme.color.secondary};
+  border-radius: ${({ theme }) => theme.spacing.micro}px;
+  margin-right: 0.25em;
+  padding: 0.25em 0.5em;
+  outline: none;
+  :hover {
+    color: ${({ theme }) => theme.color.primary};
+    background-color: ${({ theme }) => theme.background.primary};
+    border-color: ${({ theme }) => theme.background.special};
+  }
 `;
 
 type ButtonProps = {
