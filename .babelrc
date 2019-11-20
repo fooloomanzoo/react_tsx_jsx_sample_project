@@ -11,24 +11,24 @@
       }
     ]
   ],
-  "env": {
-    "esm": {
-      "presets": [
-        "@babel/typescript",
-        [
-          "@babel/env",
-          {
-            "modules": false
-          }
-        ],
-        "@babel/react"
-      ]
-    }
-  },
   "plugins": [
     "babel-plugin-styled-components",
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
     "@babel/plugin-transform-regenerator"
-  ]
+  ],
+  "env": {
+    "esm": {
+      "presets": [
+        "@babel/typescript",
+        "@babel/react",
+        [
+          "@babel/env",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    }
+  }
 }
