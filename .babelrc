@@ -1,14 +1,15 @@
 {
   "presets": [
     "@babel/typescript",
+    "@babel/react",
     [
-      "@babel/preset-env",
+      "@babel/env",
       {
-        "useBuiltIns": "usage",
-        "corejs": 3
+        "modules": false,
+        "corejs": 3,
+        "useBuiltIns": "usage"
       }
-    ],
-    "@babel/react"
+    ]
   ],
   "env": {
     "esm": {
